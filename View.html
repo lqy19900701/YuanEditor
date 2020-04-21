@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>YuanEditor</title>
+</head>
+<body>
+    <div id="div1">
+        <p>欢 迎 使 用 <b>骆 清 源 的</b> 文 本 编 辑 器</p>
+    </div>
+
+	<div>
+        <ul>
+            <li><a href="E:/Web Editor/阴天.txt" target="_blank">阴天</a></li>
+            <li><a href="Edit.html" target="_blank">编辑</a></li>
+                
+        </ul>
+    </div>
+	
+	
+	
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>YuanEditor</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>目录</h1>
+    <table class="table table-bordered text-center">
+	<tr>
+	    <td>id</td>
+	    <td>标题</td>
+	    <td>操作</td>
+	</tr>
+	<% for(var i=0;i<data.length;i++){ %>
+	<tr>
+	    <td><data[i].id ></td>
+	    <td><a href="E:/Web Editor/阴天.txt" ><data[i].name ></a></td>
+	    <td><li><a href="Edit.html" target="_blank">编辑</a></li></td>
+	</tr>
+	<% } %>
+    </table>
+  </body>
+</html>
